@@ -1,0 +1,19 @@
+ALGORITHM insertion
+VAR
+    set : ARRAY_OF INTEGER;
+    temp,i,j:INTEGER;
+
+
+BEGIN
+    FOR i FROM 0 TO set.length-1 STEP 1  DO
+       WHILE (j>0) DO
+       j=j+1
+      IF (arr[j]<arr[j-1]) THEN
+
+        temp= arr[j]
+        arr[j]=arr[j-1]
+        arr[j-1]=temp
+    END_IF
+    END_WHILE
+    END_FOR
+END
